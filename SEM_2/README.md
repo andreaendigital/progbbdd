@@ -95,18 +95,9 @@ Al finalizar, el sistema mostrará en la consola DBMS un mensaje de éxito indic
 ## Visuales:
 
 
+<img width="510" height="200" alt="Captura de pantalla 2026-01-17 164429" src="https://github.com/user-attachments/assets/7013574d-0d22-4ee6-ab9d-580c67141ec3" />
 
+<img width="1110" height="662" alt="Captura de pantalla 2026-01-17 174657" src="https://github.com/user-attachments/assets/914a7f4d-e835-4508-ba12-d5865050083a" />
 
-
-
-
-
-
-
-
-
-
-
-
-
+<img width="426" height="188" alt="Captura de pantalla 2026-01-17 174720" src="https://github.com/user-attachments/assets/5eaf94a2-165a-4b70-a9e8-d147a4f28819" />
 
