@@ -44,7 +44,7 @@ Se construye concatenando:
 La solución fue desarrollada en **Oracle PL/SQL** implementando las siguientes características:
 
 * **Cursor Explícito (`FOR LOOP`):** Se utiliza un cursor para iterar de manera eficiente sobre el rango de empleados (IDs 100 a 320), manejando automáticamente los saltos en la secuencia de IDs.
-* **Variables Bind:** Uso de `:b_fecha_proceso` para inyectar la fecha de ejecución externamente, evitando fechas fijas en el código.
+* **Variables Bind:** Uso de `:b_fecha_hoy` para inyectar la fecha de ejecución externamente, evitando fechas fijas en el código.
 * **Manejo de Fechas:** Cálculo de antigüedad utilizando `TRUNC(MONTHS_BETWEEN(...)/12)`.
 * **Control de Flujo:** Reemplazo de `CASE` por estructura `IF-ELSIF-ELSE` para manejar lógica compleja de estados civiles (normalizados con `UPPER`).
 * **Transaccionalidad:** Validación final mediante `COUNT`. Se ejecuta `COMMIT` solo si el total de registros insertados coincide con el total de empleados leídos; de lo contrario, se ejecuta `ROLLBACK`.
@@ -52,7 +52,7 @@ La solución fue desarrollada en **Oracle PL/SQL** implementando las siguientes 
 ## 📂 Archivos del Proyecto
 
 * **`Script_prueba1_C.sql`**: Script base proporcionado que crea y puebla las tablas (`EMPLEADO`, `ESTADO_CIVIL`, etc.).
-* **`Solucion_Bloque_PLSQL.sql`**: El bloque anónimo desarrollado que contiene la lógica del negocio.
+* **`Solucion.sql`**: El bloque anónimo desarrollado que contiene la lógica del negocio.
 
 ## 🚀 Instrucciones de Ejecución (Oracle SQL Developer)
 
@@ -66,8 +66,8 @@ Antes de correr el bloque principal, limpia la tabla de destino y define la vari
 
 ```sql
 TRUNCATE TABLE USUARIO_CLAVE;
-VARIABLE b_fecha_proceso VARCHAR2(10);
-EXEC :b_fecha_proceso := TO_CHAR(SYSDATE, 'DD/MM/YYYY');
+VARIABLE b_fecha_hoy VARCHAR2(10);
+EXEC :b_fecha_hoy := TO_CHAR(SYSDATE, 'DD/MM/YYYY');
 
 ```
 
