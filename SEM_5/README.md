@@ -49,14 +49,6 @@ Se implementó un esquema de captura de errores jerárquico para asegurar la int
 
 3. Ejecutar el bloque PL/SQL anónimo.
 
----
-
-
-
-## ✅ Resultado Esperado
-
-
-
 
 
 
