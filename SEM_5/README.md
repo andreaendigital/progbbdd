@@ -62,12 +62,16 @@ Se implementó un esquema de captura de errores jerárquico para asegurar la int
 
 ## Visuales:
 
+Evidencia de Excepción: 
+
+<img width="598" height="66" alt="Captura de pantalla 2026-02-09 122144" src="https://github.com/user-attachments/assets/fbbd4dcf-a3ea-43ee-8e4a-0d7251f961bb" />
+
+Resultado de Tablas:
+
+<img width="937" height="652" alt="Captura de pantalla 2026-02-09 122952" src="https://github.com/user-attachments/assets/ca07b977-bb02-4dd6-93e8-9537455b0b70" />
 
 
-
-
-
-
+<img width="643" height="172" alt="Captura de pantalla 2026-02-09 122850" src="https://github.com/user-attachments/assets/b726b193-9f6c-40d3-9b07-656ed353c07e" />
 
 
 
