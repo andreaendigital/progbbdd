@@ -54,13 +54,13 @@ Compilar Procedimiento:
 ## Ejecución y Pruebas
 Dado que el script de población inserta datos "perfectos" (todos pagan), es necesario realizar una simulación manual para ver los resultados del reporte de morosidad.
 
-Paso 1: Identificar el Periodo
+- Paso 1: Identificar el Periodo
 Verifica en qué año/mes quedaron guardados los datos:
 
 SELECT MAX(anno_mes_pcgc) FROM GASTO_COMUN;
 -- Resultado típico: 202605 (Mayo 2026)
 
-Paso 2: Simular Morosos (Borrar Pagos)
+- Paso 2: Simular Morosos (Borrar Pagos)
 Para que el reporte genere datos idénticos al requerimiento (Figura 1 y 2), elimina los pagos de los departamentos objetivo en el mes anterior (ej. Abril 202604):
 
 DELETE FROM PAGO_GASTO_COMUN 
@@ -74,7 +74,7 @@ AND (
 );
 COMMIT;
 
-Paso 3: Ejecutar el Procedimiento
+- Paso 3: Ejecutar el Procedimiento
 Ejecuta el procedimiento indicando el periodo actual (Mayo) y el valor de la UF.
 
 -- Parámetros: (Periodo_Actual, Valor_UF)
@@ -97,11 +97,11 @@ ORDER BY id_edif, nro_depto;
 
 ## Visuales:
 
+Comprobando informes luego de ejecución de procedimientos:
 
+<img width="1246" height="746" alt="Captura de pantalla 2026-02-16 131955" src="https://github.com/user-attachments/assets/84bef6c8-d38d-4747-8a22-abe8d10cd8ec" />
 
-
-
-
+<img width="698" height="629" alt="Captura de pantalla 2026-02-16 131931" src="https://github.com/user-attachments/assets/def3cf54-c15f-4734-8a07-4ba902dd15d8" />
 
 
 
