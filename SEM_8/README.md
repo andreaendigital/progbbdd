@@ -64,7 +64,7 @@ BEGIN
     sp_generar_cobros(TO_DATE('18/08/2021', 'DD/MM/YYYY'), 915);
 END;
 /
-
+```
 ## 🧪 CONSULTA DE VALIDACIÓN
 
 -- Revisar los cálculos finales y aplicación de descuentos:
@@ -77,4 +77,11 @@ SELECT * FROM reg_errores;
 ## Visuales:
 
 Comprobando informes luego de ejecución de procedimientos:
+
+<img width="1077" height="380" alt="Captura de pantalla 2026-03-01 193539" src="https://github.com/user-attachments/assets/e50786d4-ae1c-4648-b27b-96860daaf333" />
+
+<img width="1051" height="295" alt="Captura de pantalla 2026-03-01 193551" src="https://github.com/user-attachments/assets/da11dff5-d35b-4da2-8949-9c379197bbb2" />
+
+
+
 
